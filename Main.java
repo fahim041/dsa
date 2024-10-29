@@ -1,13 +1,15 @@
-import ds.LinkedList;
+import ds.DoublyLinkedList;
 
 public class Main {
     public static void main(String[] args){
-        LinkedList ll = new LinkedList();
-        ll.insertEnd(5);
-        ll.insertEnd(12);
-        ll.insertEnd(1);
-        ll.insertStart(7);
+        DoublyLinkedList dl = new DoublyLinkedList();
+        dl.insertEnd(4);
+        dl.insertEnd(1);
+        dl.insertEnd(7);
+        dl.insetFront(5);
 
-        ll.print();
+        dl.removeIndex(3);
+
+        dl.print();
     }
 }
