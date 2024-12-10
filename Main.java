@@ -1,15 +1,13 @@
-import ds.DoublyLinkedList;
+import ds.StaticArray;
 
 public class Main {
     public static void main(String[] args){
-        DoublyLinkedList dl = new DoublyLinkedList();
-        dl.insertEnd(4);
-        dl.insertEnd(1);
-        dl.insertEnd(7);
-        dl.insetFront(5);
+        var playground = new StaticArray(4);
+        playground.push(4);
+        playground.push(11);
+        playground.push(2);
+        playground.push(7);
 
-        dl.removeIndex(3);
-
-        dl.print();
+        playground.print();
     }
 }
