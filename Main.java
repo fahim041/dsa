@@ -1,13 +1,10 @@
-import ds.StaticArray;
+import sorting.InsertionSort;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args){
-        var playground = new StaticArray(4);
-        playground.push(4);
-        playground.push(11);
-        playground.push(2);
-        playground.push(7);
-
-        playground.print();
+        int[] arr = {5,1,76,63,8,2,7,4,11};
+        System.out.println(Arrays.toString(InsertionSort.sort(arr)));
     }
 }
