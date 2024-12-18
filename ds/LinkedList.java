@@ -74,6 +74,25 @@ public class LinkedList {
         return -1;
     }
 
+    public int remove(int index){
+        ListNode curr = head.next;
+
+        while(curr != null && index - 1 > 0){
+            curr = curr.next;
+            index--;
+        }
+
+        int val = curr.next.val;
+        if(curr != null && curr.next != null){
+            if(curr.next == tail){
+                tail = curr;
+            }
+            curr.next = curr.next.next;
+        }
+
+        return val;
+    }
+
     public void print(){
         ListNode curr = head.next;
         while(curr != null){
